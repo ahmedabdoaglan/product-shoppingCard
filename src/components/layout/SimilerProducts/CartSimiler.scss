@@ -1,0 +1,26 @@
+/*.threeSec {
+  display: flex;
+  align-items: center;
+  justify-self: space-between;
+}
+.oneSec {
+  display: flex;
+  align-items: center;
+  justify-self: space-between;
+}
+.imgSec img {
+  display: flex;
+}
+*/
+* {
+  box-sizing: border-box;
+}
+$primaryColor: #000000;
+$secondaryColor: #fff100;
+
+.twoSec {
+  width: 20%;
+}
+.imgSec {
+  margin-top: -30px;
+}

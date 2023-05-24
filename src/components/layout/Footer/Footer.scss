@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+$primaryColor: #000000;
+$secondaryColor: #fff100;
+
+.footer {
+  background-color: $primaryColor;
+  padding: 30px 0px 30px 0px;
+}
+.headText {
+  font-size: 60px;
+  font-weight: 600;
+  color: $secondaryColor;
+}
+.paragraphText p {
+  color: #ffffff;
+  letter-spacing: -0.4px;
+  font-size: 18px;
+}
+.headSubscribe {
+  color: #ffffff;
+  font-size: 22px;
+}
+.fieldMail {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  height: fit-content;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 24px;
+}
+.enterMail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 24px;
+  border: 0.5004362463951111px solid #d8d8d8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input {
+  border: none;
+  outline: none;
+}
+button {
+  background-color: $secondaryColor;
+  border-radius: 19px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px;
+}
+.socialLink {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px 0px 0px;
+}
+.socialLink ul li {
+  color: #ffffff;
+  list-style: none;
+  letter-spacing: -0.4px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.copyRight {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

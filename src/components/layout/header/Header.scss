@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+$primaryColor: #000000;
+$secondaryColor: #fff100;
+.adm {
+  color: $secondaryColor;
+  font-size: 100px;
+}
+.header {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.headerTop {
+  background-color: $secondaryColor;
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.styleOne-header p {
+  display: inline-block;
+}
+.styleOne-header p span {
+  text-decoration: underline;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav {
+  background-color: black;
+}
+
+.mainNav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.mainNav,
+.nav-white li {
+  padding: 10px 0 10px 0;
+  margin: 0px 5px 0 5px;
+}
+
+.mainNav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.mainNav .active {
+  color: #f11133;
+}
+
+.nav-white {
+  background-color: #ffffff;
+}
+.nav-white li {
+  text-decoration: underline;
+}
+.nav-white span {
+  font-weight: 400;
+  margin-left: -20px;
+}
+.nav-white ul li a {
+  color: $primaryColor;
+}
+hr {
+  margin-top: -5px;
+}
+
+.search-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  height: fit-content;
+  font-size: 18px;
+  font-weight: 700;
+}
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 24px;
+  border: 0.5004362463951111px solid #d8d8d8;
+}
+input {
+  border: none;
+  outline: none;
+}
+
+.img-adidas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.shoppingCard {
+  position: relative;
+}
+.shoppingCartCounter {
+  background-color: #0dcaf0;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid;
+  position: absolute;
+  top: -15px;
+  right: 11px;
+  font-size: 12px;
+}

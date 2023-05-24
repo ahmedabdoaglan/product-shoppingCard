@@ -1,0 +1,41 @@
+const listname = [
+  {
+    id: 0,
+    name: "Suit",
+    price: "9,999 LE",
+    priceDelete: "1100 LE",
+    percentage: "50%",
+    from: "Uk",
+    to: "Egypt",
+    in: "10",
+  },
+  {
+    id: 1,
+    name: "Jacket",
+    price: "8,999 LE",
+    from: "Egypt",
+    to: "Egypt",
+    in: "8",
+  },
+  {
+    id: 2,
+    name: "Shirt",
+    price: "7,999 LE",
+    priceDelete: "8100 LE",
+    percentage: "30%",
+    from: "Uk",
+    to: "Egypt",
+    in: "5",
+  },
+  {
+    id: 3,
+    name: "shoes",
+    price: "6,999 LE",
+    priceDelete: "7100 LE",
+    percentage: "70%",
+    from: "Egypt",
+    to: "Uk",
+    in: "7",
+  },
+];
+export default listname;
