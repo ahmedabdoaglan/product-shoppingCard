@@ -29,7 +29,7 @@ class CartSimiler extends Component {
         return { totalCartQuantity: 1 };
       }
     });
-    console.log(listname.length);
+    //console.log(listname[1]);
   }
 
   render() {
@@ -104,7 +104,6 @@ class CartSimiler extends Component {
               <Button variant="info" onClick={this.clickHandler}>
                 Add to card
               </Button>
-              <div>{this.state.number}</div>
             </div>
           </div>
         </div>
