@@ -3,17 +3,23 @@ import "./CartSimiler.scss";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import Button from "react-bootstrap/Button";
 import listname from "./ListName";
-import shoppingCardImg from "../../../images/shopping-card.svg";
 
+export const totalCartQuantity = (listname) => {
+  let totalQuantity = 0;
+  for (const id in listname) {
+    totalQuantity = totalQuantity + listname[id];
+  }
+  return totalQuantity;
+};
 class CartSimiler extends Component {
   constructor() {
     super();
     this.state = {
       listname: listname,
       number: 0,
+      totalCartQuantity: totalCartQuantity,
 
       cartItems: [],
-      isDropdownVisible: false,
     };
     this.clickHandler = this.clickHandler.bind(this);
   }
@@ -28,13 +34,6 @@ class CartSimiler extends Component {
     });
     //console.log(listname[1]);
   }
-  // Method to toggle the visibility of the cart dropdown
-  toggleDropdown = () => {
-    this.setState((prevState) => ({
-      isDropdownVisible: !prevState.isDropdownVisible,
-    }));
-  };
-
   // Method to add an item to the cart or increment its quantity
   addItemToCart = (product) => {
     this.setState((prevState) => {
@@ -53,36 +52,6 @@ class CartSimiler extends Component {
 
       return { cartItems: updatedCart };
     });
-  };
-
-  // Render the cart icon with a badge showing the number of items
-  renderCartIcon = () => {
-    const itemCount = this.state.cartItems.reduce(
-      (total, item) => total + item.quantity,
-      0
-    );
-    return (
-      <div onClick={this.toggleDropdown} style={{ cursor: "pointer" }}>
-        <img alt="" src={shoppingCardImg} width="30" /> <span>{itemCount}</span>
-      </div>
-    );
-  };
-
-  // Render the cart dropdown
-  renderCartDropdown = () => {
-    if (this.state.cartItems.length === 0) {
-      return <div>Your cart is empty.</div>;
-    }
-
-    return (
-      <ul>
-        {this.state.cartItems.map((item, index) => (
-          <li key={index}>
-            {item.name} - Quantity: {item.quantity}
-          </li>
-        ))}
-      </ul>
-    );
   };
 
   render() {
@@ -154,13 +123,14 @@ class CartSimiler extends Component {
               <div className="oneSec col-md-3">{`in: ${this.props.in}`}</div>
             </div>
             <div>
-              <button
+              <Button
+                variant="info"
                 onClick={() =>
                   this.addItemToCart({ id: "1", name: "Example Product" })
                 }
               >
-                Add to Cart
-              </button>
+                Add to card
+              </Button>
             </div>
           </div>
         </div>

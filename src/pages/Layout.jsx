@@ -5,6 +5,7 @@ import Header from "../components/layout/header/Header";
 import Footer from "../components/layout/Footer/Footer";
 import SimilerProducts from "../components/layout/SimilerProducts/SimilerProducts";
 import ControlCard from "../components/layout/ControlCard/ControlCard";
+import TestCard from "../TestCard/TestCard";
 
 const Layout = () => {
   return (
@@ -17,6 +18,7 @@ const Layout = () => {
       <ControlCard />
       <SimilerProducts />
       <Footer />
+      <TestCard />
     </Container>
   );
 };
